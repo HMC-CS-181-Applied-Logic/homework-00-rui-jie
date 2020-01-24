@@ -10,3 +10,4 @@ C = BoolVar('C')
 # following expression:
 
 # (((A => B) & (B => C)) => (A => C))
+Implies(And(Implies(A,B),Implies(B,C)), Implies(A,C))

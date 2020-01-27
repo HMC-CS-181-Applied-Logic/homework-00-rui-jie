@@ -10,4 +10,5 @@ C = BoolVar('C')
 # following expression:
 
 # (((A => B) & (B => C)) => (A => C))
-Implies(And(Implies(A,B),Implies(B,C)), Implies(A,C))
+f = Implies(And(Implies(A,B),Implies(B,C)), Implies(A,C))
+print(f.format())
